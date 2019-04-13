@@ -56,6 +56,7 @@ tail(dataset) #display the last five rows of the dataset
 
 setwd(filepath)
 write.csv(dataset, file = "tidyHRAdataset.csv")
+write.table(dataset,file = 'tidyHRAdataset.txt',row.names = FALSE)
 
 
 #Calculate a dataset of average of each feature vector grouped by activity and subject
@@ -66,3 +67,4 @@ dataset2 <- dataset %>%
 
 setwd(filepath)
 write.csv(dataset2, file = "tidy2HRAdataset.csv")
+write.table(dataset2,file = 'tidy2HRAdataset.txt',row.names = FALSE)
